@@ -1,5 +1,13 @@
 export default function TheAbout() {
-    return (
-        <h1>Welcome to the About page</h1>
-    );
+  return (
+    <main className= "main">
+      <div className="topnav">
+        <a href="/thespace">The Space</a>
+        <a href="/menu">Menu & Pastries</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About Us</a>
+        <button type="submit" className="button">Order Online</button>
+      </div>
+    </main>
+    )
   }
