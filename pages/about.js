@@ -2,7 +2,7 @@ export default function TheAbout() {
   return (
     <main className= "main">
       <div className="topnav">
-        <a href="/thespace">The Space</a>
+        <a href="/thespace">HELLO</a>
         <a href="/menu">Menu & Pastries</a>
         <a href="/contact">Contact</a>
         <a href="/about">About Us</a>
