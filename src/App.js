@@ -1,5 +1,13 @@
-import './App.css';
-export default function Home() {
+import './App.css'
+import { Route, Routes } from "react-router-dom"
+import { Menu } from "./pages/Menu"
+import { TheSpace } from "./pages/TheSpace"
+import { Contact } from "./pages/Contact"
+import { About } from "./pages/About"
+import { Home } from "./pages/Home"
+
+
+function App() {
   return (
     <main className= "main">
         <div className="topnav">
@@ -9,7 +17,16 @@ export default function Home() {
           <a href="/about">About Us</a>
           <button type="submit" className="button">Order Online</button>
         </div>
-        <img src="https://assets.cntraveller.in/photos/618e82491af22a472dbf4f9e/4:3/w_1792,h_1344,c_limit/Cafe%20Duco%20Interiors-10.jpg" alt="restaurant image" class="cafe"></img>
+    <Routes>
+      <Route path = "" Route element={<Home />} />
+      <Route path ="/menu" element={<Menu/>} />
+      <Route path ="/thespace" element={<TheSpace/>} />
+      <Route path ="/contact" element={<Contact/>} />
+      <Route path ="/about" element={<About/>} />
+      <Route/>
+    </Routes>
     </main>
   )
 }
+
+export default App
