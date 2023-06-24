@@ -1,7 +1,6 @@
 export function Contact() {
     return (
-    <> 
-    <p1> hello world </p1>
-    </>
-  )
+        <div className="contact-page">
+        </div>
+    );
   }
