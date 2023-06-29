@@ -45,7 +45,7 @@
   overflow: hidden;
 }
 
-.button {
+.first-button {
   border-radius: 2px;
   margin-top: 6px;
   padding: 10px 24px;
@@ -58,7 +58,7 @@
   font-size: 16px;
 }
 
-.button:hover {
+.first-button:hover {
   background-color: black;
   color: white;
 }
@@ -100,7 +100,7 @@
   margin-top:710px;
   left: 0;
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-repeat: no-repeat;
   display: block;
   position: absolute;
@@ -112,7 +112,7 @@
 .second-paragraph {
   font-family: "Pragmatica-Light", sans-serif;
   position: absolute;
-  top: 1180px;
+  top: 1230px;
   left: 0.5%;
   color: rgb(58, 50, 50);
   font-size: 23px; /* Adjust the font size as needed */
@@ -120,11 +120,27 @@
   padding: 20px 60px;
 }
 
+/* Menu page css */
+
 .menu-page {
   background-color: white;
+  position: relative;
 }
 
+.bakery {
+  margin-top:10px;
+  left: 28%;
+  width: 72%;
+  height: 592px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  background-position:center;
+  background-size:cover;
+  overflow: hidden;
+}
 .croissants {
+  left: 30%;
   width: 30%;
 }
 
@@ -133,8 +149,59 @@
 }
 
 .quiches {
-  width: 28%;
+  left: 30%;
+  width: 30%;
+  height: 253px;
+  overflow: hidden;
+  margin-top: 600px
+
+
 }
 .about-page {
   background-color: beige;
+}
+
+.search-bar {
+  position: absolute;
+  margin-top: 68px;
+  left: 2.0%;
+}
+
+form {
+  background-color: #ab7046;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+.search-button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
 }

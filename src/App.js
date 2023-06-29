@@ -14,7 +14,7 @@ function App() {
           <a href="/menu">Menu & Pastries</a>
           <a href="/contact">Contact</a>
           <a href="/about">About Us</a>
-          <button type="submit" className="button">Order Online</button>
+          <button type="submit" className="first-button">Order Online</button>
         </div>
     <Routes>
       <Route path = "" Route element={<Home />} />
