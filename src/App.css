@@ -147,21 +147,41 @@
 
 .menu-page {
   background-color: white;
-  position: relative;
+}
+
+.menu-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-buttons-container .b {
+  margin-top: 71px;
+  margin-right: 110px;
+  padding: 10px 24px;
+  transition-duration: 0.4s;
+  border: none;
+  background-color:#dddbda; 
+  border-radius: 10px;
+  color: #1c1b1be6;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.b:hover {
+  background-color: #524e4e;
+  color: white;
 }
 
 .bakery {
-  margin-top:10px;
-  left: 28%;
-  width: 72%;
-  height: 592px;
-  background-repeat: no-repeat;
+  height: 470px;
   display: block;
-  position: absolute;
-  background-position:center;
-  background-size:cover;
-  overflow: hidden;
-}
+  width: 75%;
+  margin: 25px auto 0;
+  border-radius: 10px;
+} 
+/* 
 .croissants {
   left: 30%;
   width: 30%;
@@ -177,24 +197,21 @@
   height: 253px;
   overflow: hidden;
   margin-top: 600px
-
-
-}
+} */
 .about-page {
   background-color: beige;
 }
 
 .search-bar {
-  position: absolute;
   margin-top: 68px;
-  left: 2.0%;
+  margin-right: 40px;
 }
 
 form {
-  background-color: #ab7046;
+  background-color: #ab7046e6;
   width: 300px;
   height: 44px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
