@@ -38,9 +38,7 @@ return (
                     </button>
                 </form>
         </div>
-        <div>
             <img src="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="restaurant image" className="bakery" />
-        </div>
             <img src="https://images.pexels.com/photos/6534617/pexels-photo-6534617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="croissants" />
             <img src="https://cdn.discordapp.com/attachments/1113663834310316112/1121986836017991730/tomatoes-1603599_1280.jpg" className="quiches" />
             <div>

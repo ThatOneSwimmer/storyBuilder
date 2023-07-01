@@ -1,6 +1,6 @@
 @import url('fonts.css');
 .home-page {
-  background-color: #eceaea;
+  background-color: #f6f3f3;
 }
 
 .topnav {
@@ -37,13 +37,8 @@
   left: 0;
   width: 100%;
   height: 600px;
-  background-repeat: no-repeat;
-  display: block;
-  position: absolute;
-  background-position:center;
-  background-size:cover;
   overflow: hidden;
-}
+} 
 
 .first-button {
   border-radius: 2px;
@@ -96,29 +91,57 @@
   color: white;
 }
 
+.icons-container{
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.icons-container .icons{
+  background: #fff;
+  border: .1rem solid rgba(0,0,0,.1);
+  padding:1rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icons-container .icons img {
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.icons-container .icons h3 {
+  color: #333;
+  padding-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+  color: #555;
+  font-size: 1.3rem;
+}
+
 .second-image {
-  margin-top:710px;
   left: 0;
   width: 100%;
   height: 550px;
-  background-repeat: no-repeat;
-  display: block;
-  position: absolute;
-  background-position:center;
-  background-size:cover;
-  overflow: hidden;
 }
 
-.second-paragraph {
+ .second-paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: "Pragmatica-Light", sans-serif;
-  position: absolute;
-  top: 1230px;
   left: 0.5%;
   color: rgb(58, 50, 50);
-  font-size: 23px; /* Adjust the font size as needed */
+  font-size: 23px;
   text-align: center;
   padding: 20px 60px;
-}
+} 
+
 
 /* Menu page css */
 

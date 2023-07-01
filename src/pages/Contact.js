@@ -11,6 +11,7 @@ export function Contact() {
         alt="restaurant image"
         className="dog"
       />
+      
       <p>Search Input: {userData && userData.myInput}</p>
       {/* checks if userData is empty and grabs the input from the search bar*/}
     </div>
