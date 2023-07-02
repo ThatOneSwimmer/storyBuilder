@@ -44,22 +44,39 @@ return (
         <button type="button" class = "b">Desserts</button>
         <button type="button" class = "b">Drinks</button>
       </section>
+          <img src="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="restaurant image" className="bakery" />
+            <section className = "menu-container">
+              
+              <div className = "first-img">
+              <img src="https://images.pexels.com/photos/6534617/pexels-photo-6534617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="croissants" />
+                <div className = "captions" >
+                  <h3>Croissants</h3>
+                  <span>Our recipe guarantees buttery, fluffy, and flaky croissants
+                    which has made it the most popular item on the menu.</span>
+                </div>
+                <button type="button" class = "b">Learn more</button>
+              </div>
 
-            <img src="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="restaurant image" className="bakery" />
-            {/* <img src="https://images.pexels.com/photos/6534617/pexels-photo-6534617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="croissants" />
-            <img src="https://cdn.discordapp.com/attachments/1113663834310316112/1121986836017991730/tomatoes-1603599_1280.jpg" className="quiches" /> 
+              <div className = "second-img">
+              <img src="https://cdn.discordapp.com/attachments/1113663834310316112/1121986836017991730/tomatoes-1603599_1280.jpg" className="quiches" />
+                <div className = "captions" >
+                  <h3>Quiches</h3>
+                  <span>Our French tarts consist of pastry crust filled with savoury
+                  custard and pieces of cheese, meat, seafood or vegetables.</span>
+                </div>
+                <button type="button" class = "b">Learn more</button>
+              </div>
+
+            <div className = "third-img">
             <img src="https://images.pexels.com/photos/8176276/pexels-photo-8176276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="pastries" />
-     */}
-        {/* <div className = "captions">
-            <p1> 
-                Our recipe guarantees buttery, fluffy, and flaky croissants
-                which has made it the most popular item on the menu.
-            </p1>
-            <p2> 
-                Our French tarts consist of pastry crust filled with savoury
-                custard and pieces of cheese, meat, seafood or vegetables.
-            </p2>
-        </div> */}
+                <div className = "captions" >
+                  <h3>Pastries</h3>
+                  <span>We offer a variety of fresh pastries from cupcakes, 
+                  cakes, muffins, and fruit tarts.</span>
+                </div>
+                <button type="button" class = "b">Learn more</button>
+              </div>
+            </section>
     </div>
   )
   }
