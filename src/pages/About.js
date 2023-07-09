@@ -1,12 +1,13 @@
+import image1 from '../images/1.jpg';
 export function About() {
     return (
         <div className="about-page">
-            <div className="contact-navbar">
+            <section className="about-navbar">
                 <a href="/">Home</a>
                 <a href="/achievements">Achievements</a>
                 <a href="/help">Help/FAQ</a>
                 <a href="/about">About Us</a>
-            </div>
+            </section>
             <section className = "description-container" >
                 <h3>The Storybuilder</h3>
                 <span> an online playground </span>
@@ -19,7 +20,7 @@ export function About() {
                 </p>
                 <button type="button" class = "b">Get started! </button>
             </section>
-            <img src="../images/1.jpg" alt="playground img"></img>
+            <img src={image1} alt="playground img" className = "playground-img" />
         </div>
     );
   }
