@@ -13,7 +13,7 @@ const Result = () => {
     const { name, setName } = useContext(ReferenceDataContext);
     const { readinglvl, setReadingLvl } = useContext(ReferenceDataContext);
 
-    const [apiResponse, setApiResponse] = useState("");
+    const [apiResponse, setApiResponse] = useState(`Reading Level: ${readinglvl}   Animal: ${animal}   Name: ${name}`);
     
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
