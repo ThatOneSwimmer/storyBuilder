@@ -329,12 +329,12 @@ svg {
 }
 
 .description-container .b {
+  text-decoration: none;
   font-weight: bold;
   font-size: 15px;
   border: none;
   flex: 1 1 auto;
-  margin-top: 10px;
-  padding: 18px;
+  padding: 13px 14px 13px 14px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -347,6 +347,7 @@ svg {
 
  .description-container p {
   text-align: left;
+  padding-bottom: 30px;
   display: block;
   max-width: 42%;
   font-family: "Pragmatica-Light", sans-serif;
@@ -365,3 +366,63 @@ svg {
  .description-container .b:hover {
   background-position: right center; /* change the direction of the change here */
 }
+
+/* beginning of display layout */
+
+.display-page {
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fe
+ 
+}
+.chat {
+  outline: 2px solid black;
+  padding: 20px;
+  max-width: 200px;
+  background-color: rgb(230, 204, 169);
+  border-radius: 15px;
+}
+
+.cam {
+  outline: 2px solid black;
+  padding: 20px;
+  max-width: 200px;
+  background-color: rgb(230, 204, 169);
+  border-radius: 15px;
+}
+
+.playground-img {
+  width: 52%;
+  height: 540px;
+  margin-left: 580px;
+  margin-top: -440px;
+}
+.play {
+  max-width: 50%;
+  outline: 2px solid black;
+  padding: 140px;
+  background-color: rgb(230, 204, 169);
+  border-radius: 20px;
+  position: relative;
+}
+ 
+.play .info {
+  position: relative;
+  z-index: 1;
+}
+
+.play::before {
+  content: "";
+  width: 750px;
+  height: 390px;
+  background-color: rgb(249, 242, 236);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

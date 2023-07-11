@@ -1,5 +1,6 @@
 import image1 from '../images/1.jpg';
 export function About() {
+
     return (
         <div className="about-page">
             <section className="about-navbar">
@@ -18,7 +19,7 @@ export function About() {
                     I want to go pet capybaras again :U 
                     also I love ducks they're my second favorite animal and I draw them on whiteboards at plu :O
                 </p>
-                <button type="button" class = "b">Get started! </button>
+                <a href="/display" class="b">Get started!</a>
             </section>
             <img src={image1} alt="playground img" className = "playground-img" />
         </div>
