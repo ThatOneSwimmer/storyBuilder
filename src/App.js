@@ -17,7 +17,7 @@ export default function App() {
         {/* Conditionally render the menu bar */}
         {window.location.pathname !== '/about' && window.location.pathname != '/display' && (
           <div className="topnav">
-            <a href="/">Home testing</a>
+            <a href="/">Home testingjskfs</a>
             <a href="/menu">Menu & Pastries</a>
             <a href="/contact">Contact</a>
             <a href="/about">About Us</a>
