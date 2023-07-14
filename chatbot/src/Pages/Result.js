@@ -24,7 +24,7 @@ const Result = () => {
             const result = await openai.createCompletion({
               model: "text-davinci-003",
               prompt: "Write a " + readinglvl + " grade reading level story about a " + animal + 
-                      " named " + name + " using a childish writing style",
+                      " named " + name + " using a childish writing style have the prompt be about 4 short sentences.",
               temperature: 0.5,
               max_tokens: 4000,
             });
@@ -46,16 +46,36 @@ const Result = () => {
     
     return (
         <>
-            <div
-                style={{
-                    display: "flex",
-                    flexWrap: 'wrap',
-                    justifyContent: "center",
-                }}
-            >
-                <strong>API response:</strong>
+        <main class="main">
+        <div class="main">
+          <div class="display-page">
+            <section class="left-side">
+              <div class="chat">
+                <h3>Chat</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book.
+                </p>
+              </div>
+            </section>
+            <section class="play">
+              <div class="info">
+                <h3>Now Playing...</h3>
+                <p>
                 {apiResponse}
-            </div>
+                </p>
+                <div class="display-buttons">
+                  <a href="/" button type="button" class="display-b">Home</a>
+                  <button type="button" class="display-b">Redo</button>
+                  <a href="/" button type="button" class="display-b">Start New</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
             {notShowing ? 
                 <button 
                     onClick={() => showResponse()}
