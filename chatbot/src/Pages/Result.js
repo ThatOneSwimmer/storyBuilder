@@ -9,15 +9,30 @@ const Result = () => {
       });
     
     const openai = new OpenAIApi(configuration);
+
     const { animal, setAnimal }= useContext(ReferenceDataContext);
     const { name, setName } = useContext(ReferenceDataContext);
     const { readinglvl, setReadingLvl } = useContext(ReferenceDataContext);
+    
 
     const [apiResponse, setApiResponse] = useState(`Reading Level: ${readinglvl}   Animal: ${animal}   Name: ${name}`);
-    
-    const navigate = useNavigate();
+    const [funFact, setFunFact] = useState(`Reading Level: ${readinglvl}   Animal: ${animal}   Name: ${name}`);
+    // const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
     const [notShowing, setNotShowing] = useState(true);
+    
+    const getFunFact = async () => {
+      try {
+        const fact = await openai.createChatCompletion({
+          model: 'gpt-3.5-turbo',
+          messages: [{ role: "system", content: "generate a fun fact about " + animal + 
+          " make it have a childish reading style with some emojis and keep it three sentences."}],
+        });
+        setFunFact(fact.data.choices[0].message.content);
+      } catch (e) {
+        setFunFact("Something is going wrong, Please try again.");
+        }
+    }
 
     const response = async() => {
          try {
@@ -25,7 +40,7 @@ const Result = () => {
               model: 'gpt-3.5-turbo',
               messages: [{role: "system", content: "you are an author writing a story for a specific grade level."},
               {role: "user", content: "Write a " + readinglvl + " grade reading level story about a " + animal + 
-                       " named " + name + " using a childish writing style have the prompt be about 4 short sentences."}
+                       " named " + name + " using a childish writing style. Have it be 6 sentences"}
             ],
               // model: "gpt-3.5-turbo",
               // model: "text-davinci-003",
@@ -45,6 +60,7 @@ const Result = () => {
     const showResponse = (e) => {
         setLoading(true);
         response();
+        getFunFact();
         setNotShowing(false);
         setReadingLvl("Kindergarten");
         setAnimal("");
@@ -54,16 +70,13 @@ const Result = () => {
     
     return (
         <>
-        <main class="main">
         <div class="main">
           <div class="display-page">
             <section class="left-side">
               <div class="chat">
-                <h3>Chat</h3>
+                <h3>Fun Fact</h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  {funFact}
                 </p>
               </div>
             </section>
@@ -73,30 +86,30 @@ const Result = () => {
                 <p>
                 {apiResponse}
                 </p>
-                <div class="display-buttons">
-                  <a href="/" button type="button" class="display-b">Home</a>
-                  <button type="button" class="display-b">Redo</button>
-                  <a href="/" button type="button" class="display-b">Start New</a>
-                </div>
               </div>
             </section>
           </div>
         </div>
-      </main>
+        <div class="display-buttons">
+          <a href="/" button type="button" class="display-b">Home</a>
+          <button type="button" class="display-b" onClick={() => showResponse()} >Show Response</button>
+          <a href="/readinglvl" button type="button" class="display-b">Start New</a>
+        </div>
 
-            {notShowing ? 
-                <button 
-                    onClick={() => showResponse()}
-                >
-                    {loading ? "Generating..." : "Show Response"}
-                </button>
-            :
-                <button
-                    onClick={() => navigate('/')}
-                >
-                    {loading ? "Generating..." : "Generate Another"}
-                </button>
-            }
+
+      {/* {notShowing ? 
+          <button 
+              onClick={() => showResponse()}
+          >
+              {loading ? "Generating..." : "Show Response"}
+          </button>
+      :
+          <button
+              onClick={() => navigate('/')}
+          >
+              {loading ? "Generating..." : "Generate Another"}
+          </button>
+      } */}
             
         </>
     )

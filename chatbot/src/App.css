@@ -7,27 +7,14 @@
 }
 .playground-img {
   width: 52%;
-  height: 540px;
+  height: 550px;
   margin-left: 580px;
   margin-top: -440px;
 }
 
-.about-page .about-navbar {
-  margin-left: 15px;
-  margin-top: 50px;
-}
-
-.about-navbar a {
-  font-family: "Janna LT Regular", sans-serif;
-  color: #000000;
-  padding: 0px 35px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
 .description-container {
   margin-left: 50px;
-  margin-top: 80px;
+  margin-top: 110px;
 }
 .description-container h3 {
   font-size: 50px;
@@ -92,33 +79,43 @@
 
 .main .display-page {
   position: relative;
-  z-index: 1;
+  z-index: -2;
   background-image: url('https://img.freepik.com/premium-vector/seamless-pattern-with-cute-dinosaur-riding-motorbike_263670-1921.jpg?w=1800');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-
 .display-page {
   display: flex;
   flex-direction: row;
-  padding-bottom: 130px; /* adjust this so the background fits */
+  padding-bottom: 66px; /* adjust this so the background fits */
 }
 
 .chat {
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 15px;
   outline: 3px solid black;
   padding: 20px;
-  max-width: 200px;
+  max-width: 220px;
   background-color: rgb(230, 204, 169);
   border-radius: 15px;
-  height: 300px;
+  height: 480px;
+  min-height: 100px;
+  overflow: auto;
 }
 
+.chat p {
+  line-height: 28px;
+  font-weight: medium;
+  font-size: 18px;
+  margin-top: 20px;
+  max-width: 620px;
+}
+
+
 .play {
-  margin-top: 40px;
+  margin-top: 15px;
   margin-left: 80px;
   width: 800px;
   outline: 3px solid black;
@@ -134,26 +131,32 @@
   line-height: 50px;
   font-weight: medium;
   font-size: 25px;
-  margin-top: 55px;
+  margin-top: 30px;
+  max-width: 600px;
 }
+
 .play .info {
   background-image: url('https://img.freepik.com/free-vector/leaf-pattern-beige-background_53876-118691.jpg?w=1800&t=st=1689128151~exp=1689128751~hmac=a37121633e6b230cf1fc1ba94fb605a36ca5167caae14446fb063aab80691e6d');
   background-size: cover;
   background-position: center;
-  width: 700px; /* Adjust the width as needed */
-  height: 435px;
-  opacity: 0.75;
+  width: 700px;
+  height: 430px;
+  z-index: 1;
   border-radius: 5px;
-  padding: 10px; /* Adjust the padding as needed */
+  padding: 10px;
+  overflow: auto; /* Enable scroll bar */
 }
 
 .display-buttons {
-  justify-content: space-evenly;
+  position: fixed;
+  margin-left: 420px;
+  margin-top: -55px;
   display: flex;
   flex-direction: row;
 }
 /* CSS for button styling*/
 .display-b {
+  margin-right: 100px;
   align-items: center;
   background-color: rgb(230, 204, 169);
   border: 2px solid #111;

@@ -6,21 +6,14 @@ const Main = () => {
 
   return (
     <div className="about-page">
-    <section className="about-navbar">
-        <a href="/">Home</a>
-        <a href="/achievements">Achievements</a>
-        <a href="/help">Help/FAQ</a>
-        <a href="/about">About Us</a>
-    </section>
     <section className = "description-container" >
         <h3>The Storybuilder</h3>
         <span> an online playground </span>
         <hr>
         </hr>
         <p>
-            write a brief description of the app here lol 
-            I want to go pet capybaras again :U 
-            also I love ducks they're my second favorite animal and I draw them on whiteboards at plu :O
+        A fun app for kids that lets you create your own special story about your favorite animal! 
+        Become the storyteller and choose which animal will be the star of your adventure.
         </p>
         <a href="/readinglvl" class="b">Get started!</a>
     </section>
