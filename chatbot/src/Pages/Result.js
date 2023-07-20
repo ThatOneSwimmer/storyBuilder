@@ -72,20 +72,16 @@ const Result = () => {
         <>
         <div class="main">
           <div class="display-page">
-            <section class="left-side">
-              <div class="chat">
-                <h3>Fun Fact</h3>
-                <p>
-                  {funFact}
-                </p>
+            <section class="chat">
+              <div class="info">
+                <h3>Fun Fact!</h3>
+                <p>{funFact}</p>
               </div>
             </section>
             <section class="play">
               <div class="info">
                 <h3>Now Playing...</h3>
-                <p>
-                {apiResponse}
-                </p>
+                <p>{apiResponse}</p>
               </div>
             </section>
           </div>
