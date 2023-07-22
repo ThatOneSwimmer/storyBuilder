@@ -88,7 +88,7 @@
 .display-page {
   display: flex;
   flex-direction: row;
-  padding-bottom: 66px; /* adjust this so the background fits */
+  padding-bottom: 76px; /* adjust this so the background fits */
 }
 
 .chat {
@@ -135,7 +135,7 @@
   outline: 3px solid black;
   background-color: rgb(230, 204, 169);
   border-radius: 20px;
-  height: 520px;
+  height: 510px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +146,7 @@
   font-weight: medium;
   font-size: 25px;
   margin-top: 30px;
-  max-width: 610px;
+  width: 630px;
 }
 
 .play .info {
@@ -164,13 +164,13 @@
 .play h3 {
   margin: 0;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
 }
 
 .display-buttons {
   position: fixed;
   margin-left: 420px;
-  margin-top: -55px;
+  margin-top: -60px;
   display: flex;
   flex-direction: row;
 }
