@@ -40,9 +40,8 @@ const Result = () => {
               model: 'gpt-3.5-turbo',
               messages: [{role: "system", content: "you are an author writing a story for a specific grade level."},
               {role: "user", content: "Write a " + readinglvl + " grade reading level story about a " + animal + 
-                       " named " + name + " using a childish writing style. Have it be 6 sentences"}
-            ],
-              // model: "gpt-3.5-turbo",
+                       " named " + name + " using a childish writing style. Have it be 6 sentences"}], 
+              temperature: 1.0,
               // model: "text-davinci-003",
               // prompt: "Write a " + readinglvl + " grade reading level story about a " + animal + 
               //         " named " + name + " using a childish writing style have the prompt be about 4 short sentences.",
