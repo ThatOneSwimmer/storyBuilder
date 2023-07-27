@@ -1,0 +1,24 @@
+/* File: font.css */
+@font-face {
+    font-family: 'Janna LT Regular';
+    src: local('Janna LT Regular'),
+         url('./fonts/Janna LT Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Pragmatica-ExtraLight';
+    src: local('Pragmatica-ExtraLight'),
+         url('./fonts/Pragmatica-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pragmatica-Light';
+    src: local('Pragmatica-Light'),
+         url('./fonts/Pragmatica-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Beauchef W00 Book';
+    src: local('Beauchef W00 Book'),
+         url('./fonts/Beauchef W00 Book.woff') format('woff');
+}

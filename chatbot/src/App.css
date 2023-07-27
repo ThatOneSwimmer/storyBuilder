@@ -1,38 +1,236 @@
-.App {
+@import url('fonts.css');
+
+/* Home page CSS starts here */
+
+.about-page {
+  background-color: rgb(255, 255, 255);
+}
+.playground-img {
+  width: 52%;
+  height: 550px;
+  margin-left: 580px;
+  margin-top: -440px;
+}
+
+.description-container {
+  margin-left: 50px;
+  margin-top: 110px;
+}
+.description-container h3 {
+  font-size: 50px;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#7ff7e1, #1113ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description-container span {
+  margin-left: 65px;
+  margin-top: -30px;
+  display: block;
+  max-width: 50%;
+  letter-spacing: 3px;
+  font-family: "Pragmatica-Light", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  text-align: left;
+}
+
+.description-container .b {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  flex: 1 1 auto;
+  padding: 13px 14px 13px 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #f6d365 0%, #ed8061 51%, #f6d365 100%);
+ }
+
+ .description-container p {
+  text-align: left;
+  padding-bottom: 30px;
+  display: block;
+  max-width: 42%;
+  font-family: "Pragmatica-Light", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  line-height: 1.5;
+ }
+
+ .description-container hr {
+  width:20%;
+  margin-left: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+ }
+
+ .description-container .b:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+/* Start of Result page css */
+
+.main .display-page {
+  position: relative;
+  background-image: url('https://img.freepik.com/premium-vector/seamless-pattern-with-cute-dinosaur-riding-motorbike_263670-1921.jpg?w=1800');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.display-page {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 76px; /* adjust this so the background fits */
+}
+
+.chat {
+  margin-left: 30px;
+  margin-top: 15px;
+  outline: 3px solid black;
+  padding: 20px;
+  width: 230px;
+  background-color: rgb(230, 204, 169);
+  border-radius: 15px;
+  height: 400px;
+  min-height: 100px;
+  overflow: auto;
+}
+
+  /* .chat .info {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    width: 210px;
+    height: 440px;
+    z-index: 1;
+  
+  } */
+
+.chat h3 {
+  font-size: 20px;
+  margin-top: 0px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chat p {
+  line-height: 28px;
+  font-weight: medium;
+  font-size: 19px;
+  margin-top: 10px;
+  max-width: 655px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.play {
+  margin-top: 15px;
+  margin-left: 80px;
+  width: 780px;
+  outline: 3px solid black;
+  background-color: rgb(230, 204, 169);
+  border-radius: 20px;
+  height: 510px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.play p {
+  line-height: 50px;
+  font-weight: medium;
+  font-size: 25px;
+  margin-top: 30px;
+  width: 630px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.play .info {
+  background-image: url('https://img.freepik.com/free-vector/leaf-pattern-beige-background_53876-118691.jpg?w=1800&t=st=1689128151~exp=1689128751~hmac=a37121633e6b230cf1fc1ba94fb605a36ca5167caae14446fb063aab80691e6d');
+  background-size: cover;
+  background-position: center;
+  width: 700px;
+  height: 430px;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.play h3 {
+  margin: 0;
+  font-size: 22px;
+  text-align: left;
+}
+
+.display-buttons {
+  position: fixed;
+  margin-left: 420px;
+  margin-top: -60px;
+  display: flex;
+  flex-direction: row;
+}
+/* CSS for button styling*/
+.display-b {
+  margin-right: 100px;
+  align-items: center;
+  background-color: rgb(230, 204, 169);
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 45px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.display-b:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 45px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.display-b:hover:after {
+  transform: translate(0, 0);
+}
+
+.display-b:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.display-b:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .display-b {
+    padding: 0 40px;
   }
 }

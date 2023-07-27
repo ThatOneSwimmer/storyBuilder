@@ -1,3 +1,4 @@
+import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { ReferenceDataContextProvider } from "./ReferenceDataContext"
 import Main from './Pages/Main';
