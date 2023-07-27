@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 const ReferenceDataContext = createContext({ 
     prompt: "", 
     setPrompt: () => {},
-    readinglvl: "Kindergarten",
+    readinglvl: "",
     setReadingLvl: () => {},
     animal: "",
     setAnimal: () => {},

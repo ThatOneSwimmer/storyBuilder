@@ -19,6 +19,7 @@ const ReadingLevel = () => {
             >
                 <strong>What grade are you in?</strong>
                 <select value={readinglvl} onChange={e => setReadingLvl(e.target.value)}>
+                <option value="Undefined">Select One...</option>
                 <option value="Kindergarten">Kindergarten</option>
                 <option value="First">First Grade</option>
                 <option value="Second">Second Grade</option>
