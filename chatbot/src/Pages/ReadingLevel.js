@@ -6,9 +6,6 @@ const ReadingLevel = () => {
     const { readinglvl, setReadingLvl } = useContext(ReferenceDataContext);
     const navigate = useNavigate();
 
-    const update = (e) => {
-        setReadingLvl(e.target.readinglvl);
-    }
 
     return (
         <>
@@ -21,11 +18,12 @@ const ReadingLevel = () => {
                 }}
             >
                 <strong>What grade are you in?</strong>
-                <select value={readinglvl} onChange={update}>
-                <option value="kindergarten">Kindergarten</option>
-                <option value="first">First Grade</option>
-                <option value="second">Second Grade</option>
-                <option value="third">Third Grade</option>
+                <select value={readinglvl} onChange={e => setReadingLvl(e.target.value)}>
+                <option value="Undefined">Select One...</option>
+                <option value="Kindergarten">Kindergarten</option>
+                <option value="First">First Grade</option>
+                <option value="Second">Second Grade</option>
+                <option value="Third">Third Grade</option>
                 </select>
             </div>
             <div
