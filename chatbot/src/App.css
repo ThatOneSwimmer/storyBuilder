@@ -79,7 +79,7 @@
 
 .main .display-page {
   position: relative;
-  background-image: url('https://img.freepik.com/premium-vector/seamless-pattern-with-cute-dinosaur-riding-motorbike_263670-1921.jpg?w=1800');
+  background-image: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149162009.jpg?w=1800&t=st=1690496941~exp=1690497541~hmac=65d25e226dea651bb5cb2a8a3764a8e2016c150ba67f575d6d941369cc921605');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -96,23 +96,13 @@
   margin-top: 15px;
   outline: 3px solid black;
   padding: 20px;
-  width: 230px;
+  width: 220px;
   background-color: rgb(230, 204, 169);
-  border-radius: 15px;
+  border-radius: 8px;
   height: 400px;
   min-height: 100px;
   overflow: auto;
 }
-
-  /* .chat .info {
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    width: 210px;
-    height: 440px;
-    z-index: 1;
-  
-  } */
 
 .chat h3 {
   font-size: 20px;
@@ -124,7 +114,7 @@
   font-weight: medium;
   font-size: 19px;
   margin-top: 10px;
-  max-width: 655px;
+  max-width: 660px;
 }
 
 
@@ -233,4 +223,38 @@
   .display-b {
     padding: 0 40px;
   }
+}
+
+/* Start of animal page CSS */
+
+.animal-page h3 {
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: 95px;
+  font-family: "SunnyspellsRegular-MV9ze";
+  text-align: center;
+  color: rgb(48, 131, 194);
+  letter-spacing: 5px;
+}
+
+.animal-page .animals-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the items */
+  align-items: center; /* Vertically center the items */
+}
+
+.animals-container img {
+  width: 220px;
+  margin-top: 5px;
+
+}
+
+.animal-page {
+  padding-top: 1px;
+  background-image: url("images/abstract.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 200px;
+
 }

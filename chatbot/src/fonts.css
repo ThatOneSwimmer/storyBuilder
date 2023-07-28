@@ -22,3 +22,9 @@
     src: local('Beauchef W00 Book'),
          url('./fonts/Beauchef W00 Book.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'SunnyspellsRegular-MV9ze';
+    src: local('SunnyspellsRegular-MV9ze'),
+         url('./fonts/SunnyspellsRegular-MV9ze.otf') format('opentype');
+}
