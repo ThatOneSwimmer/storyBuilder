@@ -13,17 +13,21 @@ const Animal = () => {
 
     return (
         <div className = "animal-page">
-            <h3>
-                CHOOSE YOUR ANIMAL
-            </h3>
+            <div className = "title-container">
+                <h3>
+                    CHOOSE YOUR CHARACTER
+                </h3>
+              
+            </div>
             <section className = "animals-container"> 
-                <img src={seal} alt="seal img" className = "seal-img" />
+            
+                <img src={seal} alt="seal img" className = "seal-img"/>
                 <img src={unicorn} alt="unicorn img" className = "unicorn-img" />
                 <img src={bear} alt="bear img" className = "bear-img" />
                 <img src={dog} alt="dog img" className = "dog-img" />
                 <img src={cat} alt="cat img" className = "cat-img" />
             </section>
-            
+            <a href="/name" class="b">Next Step</a> 
             
             {/* Lilyan's code*/}
             {/* <div

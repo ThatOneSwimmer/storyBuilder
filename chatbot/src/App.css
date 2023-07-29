@@ -245,10 +245,36 @@
 
 .animals-container img {
   width: 220px;
-  margin-top: 5px;
-
 }
 
+.seal-img:hover {
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+  transform: translateY(-25px); /* Move the image up 10 pixels when hovering */
+}
+
+.unicorn-img:hover {
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+  transform: translateY(-25px); 
+}
+
+.bear-img:hover {
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+  transform: translateY(-25px); 
+}
+
+.cat-img:hover {
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+  transform: translateY(-25px); 
+}
+.dog-img:hover {
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+  transform: translateY(-25px); 
+}
 .animal-page {
   padding-top: 1px;
   background-image: url("images/abstract.jpg");
@@ -256,5 +282,26 @@
   background-size: cover;
   background-position: center;
   padding-bottom: 200px;
+}
 
+.animal-page .b {
+  margin-bottom: 50px;
+  margin-left: 580px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  flex: 1 1 auto;
+  padding: 13px 14px 13px 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #f6d365 0%, #ed8061 51%, #f6d365 100%)
+}
+.animal-page .title-container {
+  
 }
