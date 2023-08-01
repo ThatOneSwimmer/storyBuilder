@@ -13,7 +13,7 @@ const Main = () => {
         </hr>
         <p>
         A fun app for kids that lets you create your own special story about your favorite animal! 
-        Become the storyteller and choose which animal will be the star of your adventure.
+        Become the storyteller and choose which animal will be the star of your adventure. 
         </p>
         <a href="/readinglvl" class="b">Get started!</a>
     </section>

@@ -10,24 +10,44 @@ import cat from '../images/cat.png';
 const Animal = () => {
     const { animal, setAnimal } = useContext(ReferenceDataContext);
     const navigate = useNavigate();
+    const handleSealClick = () => {
+        setAnimal("Seal");
+    };
+
+    const handleUnicornClick = () => {
+        setAnimal("Unicorn");
+    };
+
+    const handleBearClick = () => {
+        setAnimal("Bear");
+    };
+
+    const handleDogClick = () => {
+        setAnimal("Dog");
+    };
+
+    const handleCatClick = () => {
+        setAnimal("Cat");
+    };
 
     return (
         <div className = "animal-page">
             <div className = "title-container">
                 <h3>
                     CHOOSE YOUR CHARACTER
-                </h3>
-              
+                </h3> 
             </div>
             <section className = "animals-container"> 
-            
-                <img src={seal} alt="seal img" className = "seal-img"/>
-                <img src={unicorn} alt="unicorn img" className = "unicorn-img" />
-                <img src={bear} alt="bear img" className = "bear-img" />
-                <img src={dog} alt="dog img" className = "dog-img" />
-                <img src={cat} alt="cat img" className = "cat-img" />
+                <img src={seal} alt="seal img" className = "seal-img" onClick = {handleSealClick} />
+                <img src={unicorn} alt="unicorn img" className = "unicorn-img" onClick = {handleUnicornClick}/>
+                <img src={bear} alt="bear img" className = "bear-img" onClick = {handleBearClick}/>
+                <img src={dog} alt="dog img" className = "dog-img" onClick = {handleDogClick}/>
+                <img src={cat} alt="cat img" className = "cat-img" onClick = {handleCatClick}/>
             </section>
-            <a href="/name" class="b">Next Step</a> 
+
+            <button onClick={() => navigate('/name')} class= "b">
+                    Next Step
+            </button>
             
             {/* Lilyan's code*/}
             {/* <div
