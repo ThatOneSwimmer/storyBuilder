@@ -238,6 +238,7 @@
 }
 
 .animal-page .animals-container {
+  margin-top: -40px;
   display: flex;
   justify-content: center; /* Horizontally center the items */
   align-items: center; /* Vertically center the items */
@@ -248,45 +249,54 @@
 }
 
 .seal-img:hover {
+  cursor: pointer;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
   transition: transform 0.3s ease; /* Add smooth transition effect */
   transform: translateY(-25px); /* Move the image up 10 pixels when hovering */
 }
 
 .unicorn-img:hover {
+  cursor: pointer;
   object-fit: cover; 
   transition: transform 0.3s ease;
   transform: translateY(-25px); 
 }
 
 .bear-img:hover {
+  cursor: pointer;
   object-fit: cover; 
   transition: transform 0.3s ease; 
   transform: translateY(-25px); 
 }
 
 .cat-img:hover {
+  cursor: pointer;
   object-fit: cover; 
   transition: transform 0.3s ease; 
   transform: translateY(-25px); 
 }
+
 .dog-img:hover {
+  cursor: pointer;
   object-fit: cover; 
   transition: transform 0.3s ease; 
   transform: translateY(-25px); 
 }
+
 .animal-page {
   padding-top: 1px;
+  padding-bottom: 92px;
   background-image: url("images/abstract.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-bottom: 200px;
+  
 }
 
 .animal-page .b {
-  margin-bottom: 50px;
-  margin-left: 580px;
+  cursor: pointer;
+  margin-left: 575px;
+  margin-top: 60px;
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
@@ -302,6 +312,7 @@
   border-radius: 3px;
   background-image: linear-gradient(to right, #f6d365 0%, #ed8061 51%, #f6d365 100%)
 }
-.animal-page .title-container {
-  
+
+.animal-page .b:hover {
+  background-position: right center; /* change the direction of the change here */
 }
