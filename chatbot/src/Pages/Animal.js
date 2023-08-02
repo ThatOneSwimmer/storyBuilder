@@ -11,23 +11,23 @@ const Animal = () => {
     const { animal, setAnimal } = useContext(ReferenceDataContext);
     const navigate = useNavigate();
     const handleSealClick = () => {
-        setAnimal("Seal");
+        setAnimal("seal");
     };
 
     const handleUnicornClick = () => {
-        setAnimal("Unicorn");
+        setAnimal("unicorn");
     };
 
     const handleBearClick = () => {
-        setAnimal("Bear");
+        setAnimal("bear");
     };
 
     const handleDogClick = () => {
-        setAnimal("Dog");
+        setAnimal("dog");
     };
 
     const handleCatClick = () => {
-        setAnimal("Cat");
+        setAnimal("cat");
     };
 
     return (
@@ -45,9 +45,7 @@ const Animal = () => {
                 <img src={cat} alt="cat img" className = "cat-img" onClick = {handleCatClick}/>
             </section>
 
-            <button onClick={() => navigate('/name')} class= "b">
-                    Next Step
-            </button>
+            <button onClick={() => navigate('/name')} class= "b"> Next Step</button>
             
             {/* Lilyan's code*/}
             {/* <div

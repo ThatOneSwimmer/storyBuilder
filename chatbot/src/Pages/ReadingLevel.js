@@ -36,7 +36,7 @@ const ReadingLevel = () => {
                 height: '30vh',
                 }}
             >
-                <button onClick={() => navigate('/animal')}>
+                <button onClick={() => navigate('/result')}>
                     Next
                 </button>      
             </div>

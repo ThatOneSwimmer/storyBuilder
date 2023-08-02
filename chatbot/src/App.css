@@ -316,3 +316,48 @@
 .animal-page .b:hover {
   background-position: right center; /* change the direction of the change here */
 }
+
+/* Start of Name page CSS */
+
+.search-bar {
+  margin-top: 60px;
+  margin-left: 435px;
+  margin-right: 20px;
+}
+
+form {
+  background-color: rgb(238, 202, 196);
+  width: 390px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #1c1b1be6;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #524e4e82;
+}
+
+.search-button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #9293b1;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
