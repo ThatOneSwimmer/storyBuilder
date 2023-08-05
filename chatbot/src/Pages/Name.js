@@ -19,6 +19,7 @@ const animalImages = {
     cat: cat,
   };
 
+
 const Name = () => {
     const { name, setName, animal } = useContext(ReferenceDataContext);
     const navigate = useNavigate();

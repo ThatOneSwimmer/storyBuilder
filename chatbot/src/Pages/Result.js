@@ -41,7 +41,7 @@ const Result = () => {
               messages: [{role: "system", content: "you are an author writing a story for a specific grade level."},
               {role: "user", content: "Write a " + readinglvl + " grade reading level story about a " + animal + 
                        " named " + name + " using a childish writing style. Have it be 6 sentences"}], 
-              temperature: 1.0,
+              temperature: 0.8,
               // model: "text-davinci-003",
               // prompt: "Write a " + readinglvl + " grade reading level story about a " + animal + 
               //         " named " + name + " using a childish writing style have the prompt be about 4 short sentences.",
@@ -88,7 +88,7 @@ const Result = () => {
         <div class="display-buttons">
           <a href="/" button type="button" class="display-b">Home</a>
           <button type="button" class="display-b" onClick={() => showResponse()} >Show Response</button>
-          <a href="/readinglvl" button type="button" class="display-b">Start New</a>
+          <a href="/animal" button type="button" class="display-b">Start New</a>
         </div>
 
 

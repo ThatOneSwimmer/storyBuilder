@@ -38,15 +38,15 @@ const Animal = () => {
                 </h3> 
             </div>
             <section className = "animals-container"> 
-                <img src={seal} alt="seal img" className = "seal-img" onClick = {handleSealClick} />
+                <img src={seal} alt="seal img" className = "seal-img" onClick = {handleSealClick}/>
                 <img src={unicorn} alt="unicorn img" className = "unicorn-img" onClick = {handleUnicornClick}/>
                 <img src={bear} alt="bear img" className = "bear-img" onClick = {handleBearClick}/>
                 <img src={dog} alt="dog img" className = "dog-img" onClick = {handleDogClick}/>
                 <img src={cat} alt="cat img" className = "cat-img" onClick = {handleCatClick}/>
             </section>
-
-            <button onClick={() => navigate('/name')} class= "b"> Next Step</button>
-            
+            <div className = "button-container">
+                <button onClick={() => navigate('/name')} class= "b"> Next Step</button>
+            </div>
             {/* Lilyan's code*/}
             {/* <div
                 style={{

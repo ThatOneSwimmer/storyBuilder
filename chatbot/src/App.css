@@ -79,7 +79,7 @@
 
 .main .display-page {
   position: relative;
-  background-image: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149162009.jpg?w=1800&t=st=1690496941~exp=1690497541~hmac=65d25e226dea651bb5cb2a8a3764a8e2016c150ba67f575d6d941369cc921605');
+  background-image: url('images/mountain.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,7 +88,7 @@
 .display-page {
   display: flex;
   flex-direction: row;
-  padding-bottom: 76px; /* adjust this so the background fits */
+  padding-bottom: 70px; /* adjust this so the background fits */
 }
 
 .chat {
@@ -96,7 +96,7 @@
   margin-top: 15px;
   outline: 3px solid black;
   padding: 20px;
-  width: 220px;
+  width: 230px;
   background-color: rgb(230, 204, 169);
   border-radius: 8px;
   height: 400px;
@@ -105,16 +105,17 @@
 }
 
 .chat h3 {
-  font-size: 20px;
-  margin-top: 0px;
+  font-weight: lighter;
+  font-family: SunnyspellsRegular-MV9ze;
+  font-size: 35px;
+  margin-top: -8px;
   text-align: center;
 }
 .chat p {
   line-height: 28px;
   font-weight: medium;
   font-size: 19px;
-  margin-top: 10px;
-  max-width: 660px;
+  margin-top: -30px;
 }
 
 
@@ -122,7 +123,7 @@
   margin-top: 15px;
   margin-left: 80px;
   width: 780px;
-  outline: 3px solid black;
+  outline: 2px solid black;
   background-color: rgb(230, 204, 169);
   border-radius: 20px;
   height: 510px;
@@ -135,12 +136,12 @@
   line-height: 50px;
   font-weight: medium;
   font-size: 25px;
-  margin-top: 30px;
-  width: 630px;
+  margin-top: 10px;
+  width: 680px;
 }
 
 .play .info {
-  background-image: url('https://img.freepik.com/free-vector/leaf-pattern-beige-background_53876-118691.jpg?w=1800&t=st=1689128151~exp=1689128751~hmac=a37121633e6b230cf1fc1ba94fb605a36ca5167caae14446fb063aab80691e6d');
+  background-color: rgb(246, 241, 233);
   background-size: cover;
   background-position: center;
   width: 700px;
@@ -152,8 +153,10 @@
 }
 
 .play h3 {
+  font-family: SunnyspellsRegular-MV9ze;
   margin: 0;
-  font-size: 22px;
+  font-weight: lighter;
+  font-size: 40px;
   text-align: left;
 }
 
@@ -285,23 +288,25 @@
 
 .animal-page {
   padding-top: 1px;
-  padding-bottom: 92px;
+  padding-bottom: 81px;
   background-image: url("images/abstract.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   
 }
-
+.button-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; /* Horizontally center the items */
+  align-items: center; /* Vertically center the items */
+}
 .animal-page .b {
   cursor: pointer;
-  margin-left: 575px;
-  margin-top: 60px;
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
   border: none;
-  flex: 1 1 auto;
   padding: 13px 14px 13px 14px;
   text-align: center;
   text-transform: uppercase;
@@ -320,12 +325,13 @@
 /* Start of Name page CSS */
 
 .search-bar {
-  margin-top: 60px;
-  margin-left: 435px;
-  margin-right: 20px;
+  margin-top: 49px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-form {
+.search-bar form {
   background-color: rgb(238, 202, 196);
   width: 390px;
   height: 55px;
@@ -334,9 +340,10 @@ form {
   align-items: center;
 }
 
-input {
+.search-bar input {
   all: unset;
-  font: 16px system-ui;
+  font-size: 30px;
+  font-family: SunnyspellsRegular-MV9ze;
   color: #1c1b1be6;
   height: 100%;
   width: 100%;
@@ -360,4 +367,50 @@ svg {
   width: 24px;
   height: 24px;
   padding: 10px;
+}
+
+/* start of gradelvl page css */
+
+.gradelvl-img:hover {
+  cursor: pointer;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+  transform: translateY(-25px); /* Move the image up 10 pixels when hovering */
+}
+
+
+.grade-dropdown-container select {
+  padding: 10px;
+  font-size: 16px;
+  height: 55px;
+  width: 390px; /* Make the dropdown take full width */
+  background-color: rgb(221, 230, 243); /* Background color for the dropdown */
+  color: #2c527d; /* Text color */
+  appearance: none; /* Remove default appearance */
+  cursor: pointer;
+  font-size: 45px;
+  text-align: center;
+  font-family: SunnyspellsRegular-MV9ze;
+}
+
+.grade-dropdown-container {
+  gap: 15px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kids-container {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center; /* Horizontally center the items */
+  align-items: center; /* Vertically center the items */
+  gap: 30px;
+}
+
+.kids-container img {
+  width: 245px;
 }
