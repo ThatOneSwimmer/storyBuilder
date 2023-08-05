@@ -123,7 +123,7 @@
   margin-top: 15px;
   margin-left: 80px;
   width: 780px;
-  outline: 2px solid black;
+  outline: 3px solid black;
   background-color: rgb(230, 204, 169);
   border-radius: 20px;
   height: 510px;
@@ -367,6 +367,19 @@ svg {
   width: 24px;
   height: 24px;
   padding: 10px;
+}
+
+.one-animal-img {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0); /* Start and end position */
+  }
+  50% {
+      transform: translateY(-25px); /* at the midpoint, bounce up */
+  }
 }
 
 /* start of gradelvl page css */

@@ -33,7 +33,7 @@ const Name = () => {
                     </h3> 
                 </div>
                 <section className = "animals-container"> 
-                    <img src={animalImages[animal]} alt={animal} className = "seal-img" />
+                    <img src={animalImages[animal]} alt={animal} className = "one-animal-img" />
                 </section>
                 <div class="search-bar">
                     <form class="form">
