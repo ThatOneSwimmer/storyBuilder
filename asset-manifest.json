@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/storyBuilder/static/css/main.cc7a7560.css",
+    "main.js": "/storyBuilder/static/js/main.323b7f84.js",
+    "static/js/787.8fb4aeac.chunk.js": "/storyBuilder/static/js/787.8fb4aeac.chunk.js",
+    "static/media/1.jpg": "/storyBuilder/static/media/1.c08a4cead2a40dcdd67c.jpg",
+    "static/media/mountain.jpg": "/storyBuilder/static/media/mountain.af8c90b86058bcc7bdf2.jpg",
+    "static/media/abstract.jpg": "/storyBuilder/static/media/abstract.93eb94cf6ad3f8cc83e0.jpg",
+    "static/media/Janna LT Regular.ttf": "/storyBuilder/static/media/Janna LT Regular.84761f7901e195d3b290.ttf",
+    "static/media/walking-the-dog.png": "/storyBuilder/static/media/walking-the-dog.005e41d9f9154e41dda2.png",
+    "static/media/Pragmatica-ExtraLight.woff": "/storyBuilder/static/media/Pragmatica-ExtraLight.045c99b537d735fd5dd0.woff",
+    "static/media/Pragmatica-Light.woff": "/storyBuilder/static/media/Pragmatica-Light.f9fcd0467b717cf214d6.woff",
+    "static/media/flower-girl.png": "/storyBuilder/static/media/flower-girl.dc094432953cd68b8296.png",
+    "static/media/SunnyspellsRegular-MV9ze.otf": "/storyBuilder/static/media/SunnyspellsRegular-MV9ze.5d3e37fefc5faad04ba2.otf",
+    "static/media/boy.png": "/storyBuilder/static/media/boy.70391b36e2492e643840.png",
+    "static/media/cat.png": "/storyBuilder/static/media/cat.c33fe8bd63ec6c12271c.png",
+    "static/media/unicorn.png": "/storyBuilder/static/media/unicorn.d71952152cf07b83073f.png",
+    "static/media/polar-bear.png": "/storyBuilder/static/media/polar-bear.97d47f68100dc2d4bf08.png",
+    "static/media/Beauchef W00 Book.woff": "/storyBuilder/static/media/Beauchef W00 Book.fd4f9ffd05de6f8e5586.woff",
+    "static/media/seal-no-outline.png": "/storyBuilder/static/media/seal-no-outline.fd24dc6deed2ad4c9a1b.png",
+    "index.html": "/storyBuilder/index.html",
+    "main.cc7a7560.css.map": "/storyBuilder/static/css/main.cc7a7560.css.map",
+    "main.323b7f84.js.map": "/storyBuilder/static/js/main.323b7f84.js.map",
+    "787.8fb4aeac.chunk.js.map": "/storyBuilder/static/js/787.8fb4aeac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc7a7560.css",
+    "static/js/main.323b7f84.js"
+  ]
+}
