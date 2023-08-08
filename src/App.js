@@ -12,7 +12,7 @@ const App = () => {
     <>
       <ReferenceDataContextProvider>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/storyBuilder" element={<Main />} />
           <Route path="/result" element={<Result />} />
           <Route path="/readinglvl" element={<ReadingLevel />} />
           <Route path="/animal" element={<Animal />} />
