@@ -21,8 +21,12 @@ const animalImages = {
 
 
 const Name = () => {
-    const { name, setName, animal } = useContext(ReferenceDataContext);
+    const { name, setName, animal, setAnimal } = useContext(ReferenceDataContext);
     const navigate = useNavigate();
+    
+    if (animal == undefined) {
+        setAnimal('dog');
+    }
 
     return (
         <>
