@@ -7,9 +7,11 @@ import bear from '../images/polar-bear.png';
 import dog from '../images/walking-the-dog.png';
 import cat from '../images/cat.png';
 
+
 const Animal = () => {
     const { animal, setAnimal } = useContext(ReferenceDataContext);
     const navigate = useNavigate();
+
     const handleSealClick = () => {
         setAnimal("seal");
     };
